@@ -13,6 +13,8 @@ Whilst users may have larger screened devices such as the iPhone 6, 7 or 8 with 
 
 * Returns text output of logical resolution eg. 320X568.
 * Returns true if Display Zoom is enabled.
+* Returns logical height.
+* Returns logical width.
 
 ## Requirements
 
@@ -25,13 +27,20 @@ To install, simply add  `LogicalResolution.h` & `LogicalResolution.m` files to y
 
 ## Usage
 
-There are two methods available.
+There followimg methods are available.
 ```
 // @return NSString eg. 320X568.
 + (NSString *)logicalResolution;
 
 // @return true if zoomed, false if standard.
 + (bool)isDisplayZoomed;
+
+// @return double eg. 568.0
++ (double)logicalHeight;
+
+// @return double eg. 320.0
++ (double)logicalWidth;
+
 ```
 
 ## License

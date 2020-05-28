@@ -27,6 +27,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (bool)isDisplayZoomed;
 
+
+/**
+Get logical resolution height.
+@return double eg. 568.0
+*/
++ (double)logicalHeight;
+
+
+/**
+Get logical resolution width.
+@return double eg. 320.0
+*/
++ (double)logicalWidth;
+
 @end
 
 NS_ASSUME_NONNULL_END

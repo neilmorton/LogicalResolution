@@ -24,4 +24,16 @@
     return (screenScale != nativeScale);
 }
 
++ (double)logicalHeight
+{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    return screenBounds.size.height;
+}
+
++ (double)logicalWidth
+{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    return screenBounds.size.width;
+}
+
 @end
